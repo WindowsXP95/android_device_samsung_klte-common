@@ -60,6 +60,11 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
     /system/bin/mediaserver=22 \
     /system/vendor/bin/mm-qcamera-daemon=22 \
     /system/vendor/bin/hw/rild=27
+    
+# Filesystem
+BOARD_ROOT_EXTRA_FOLDERS := efs firmware firmware-modem
+BOARD_ROOT_EXTRA_SYMLINKS := /data/tombstones:/tombstones
+TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 13631488
