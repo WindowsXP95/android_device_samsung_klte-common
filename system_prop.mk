@@ -46,21 +46,21 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=/vendor/lib/libqti-perfd-client.so
 
 # Radio
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.data.netmgrd.qos.enable=true \
-    persist.data.qmi.adb_logmask=0 \
-    persist.radio.add_power_save=1 \
-    persist.radio.lte_vrat_report=1 \
-    ro.telephony.mms_data_profile=5 \
-    ro.telephony.ril_class=KlteRIL
+#PRODUCT_PROPERTY_OVERRIDES += \
+#   persist.data.netmgrd.qos.enable=true \
+#    persist.data.qmi.adb_logmask=0 \
+#    persist.radio.add_power_save=1 \
+#    persist.radio.lte_vrat_report=1 \
+#   ro.telephony.mms_data_profile=5 \
+#    ro.telephony.ril_class=KlteRIL
 
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sensors=1
 
 # Tethering
-PRODUCT_PROPERTY_OVERRIDES += \
-    net.tethering.noprovisioning=true
+#PRODUCT_PROPERTY_OVERRIDES += \
+#  net.tethering.noprovisioning=true
 
 # WiFi
 PRODUCT_PROPERTY_OVERRIDES += \
